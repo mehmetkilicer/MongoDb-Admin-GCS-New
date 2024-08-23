@@ -1,0 +1,28 @@
+﻿@model MongoDbEgitim.Dtos.OrderDtos.GetByIdOrderDto
+@{
+    ViewData["Title"] = "UpdateOrder";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+    <br />
+    <br>
+    <form method="post">
+        <label>Sipariş Tarihi</label>
+        <input type="text" class="form-control" asp-for="OrderDate" />
+        <br>
+        <label>Müşteri</label>
+        @Html.DropDownListFor(x => x.CustomerId, (List<SelectListItem>)ViewBag.CustomerList, "Müşteriler", new { @class = "form-control" })
+        <br>
+        <label>Ürün</label>
+        @Html.DropDownListFor(x => x.ProductId, (List<SelectListItem>)ViewBag.ProductList, "Ürünler", new { @class = "form-control" })
+        <label>Durum</label>
+        <input type="text" class="form-control" asp-for="Status" />
+        <br>
+        <label>Adet</label>
+        <input type="text" class="form-control" asp-for="OrderProductStock" />
+        <br>
+        <button class="btn btn-primary">Siparişi Oluştur</button>
+    </form>
+</div>

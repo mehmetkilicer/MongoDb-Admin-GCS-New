@@ -1,0 +1,50 @@
+﻿@model MongoDbEgitim.Dtos.ProductDtos.CreateProductDto
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="card shadow">
+            <div class="card-header border-0">
+                <h3 class="mb-0">Yeni Ürün ekleme</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                    <tbody>
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="container">
+                                <br /><br />
+                                <label>Ürün Adı</label>
+                                <input type="text" asp-for="Name" class="form-control" />
+                                <br />
+                                <label>Ürün Stok</label>
+                                <input type="text" asp-for="Stock" class="form-control" />
+                                <br />
+                                <label>Ürün Fiyat</label>
+                                <input type="text" asp-for="Price" class="form-control" />
+                                <br />
+                                <label>Resim Seçin</label>
+                                <input type="file" class="form-control border" name="ImageUrl" />
+                                <br />
+                                <input name="SavedUrl" type="hidden" class="form-control" />
+                                <input name="SavedFileName" type="hidden" class="form-control" />
+                                <br />
+                                <label>Kategori Seçiniz</label>
+                                    @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.CategoryList, "Seçiniz...", new { @class = "form-control" })
+                                <br />
+                                <button type="submit" class="btn btn-primary">Ürünü Ekle</button>
+                                <br /><br />
+                            </div>
+                        </form>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

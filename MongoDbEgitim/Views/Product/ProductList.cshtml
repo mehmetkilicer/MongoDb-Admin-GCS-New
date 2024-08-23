@@ -1,0 +1,71 @@
+﻿@model List<MongoDbEgitim.Dtos.ProductDtos.ResultProductWithCategoryDto>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+<div class="row">
+    <div class="col">
+        <div class="card shadow">
+            <div class="card-header border-0">
+                <h3 class="mb-0">Ürün Listesi</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ürün</th>
+                            <th scope="col">Ürün Adı</th>
+                            <th scope="col">Ürün Stok</th>
+                            <th scope="col">Ürün Fiyat</th>
+                            <th scope="col">Kategori Adı</th>
+                            <th scope="col">Sil</th>
+                            <th scope="col">Güncelle</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td>
+                                    @count
+                                </td>
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <a href="#" class="avatar rounded-circle mr-3">
+                                            <img alt="Image placeholder" src="@item.SavedUrl" width="50px" height="50px">
+                                        </a>
+                                  
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="media-body">
+                                        <span class="mb-0 text-sm">@item.Name</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    @item.Stock
+                                </td>
+                                <td>
+                                    @item.Price
+                                </td>
+                                <td>
+                                    @item.Category.CategoryName
+
+                                </td>
+                                <td><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-warning">Sil</a></td>
+                                <td><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-info">Güncelle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <br />
+        <td><a href="/Product/CreateProduct/" class="btn btn-primary">Yeni Ürün Girişi</a></td>
+    </div>
+</div>
