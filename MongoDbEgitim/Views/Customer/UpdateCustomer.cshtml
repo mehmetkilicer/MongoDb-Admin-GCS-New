@@ -1,0 +1,25 @@
+﻿@model MongoDbEgitim.Dtos.CustomerDtos.GetByIdCustomerDto
+@{
+    ViewData["Title"] = "UpdateCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="container">
+    <br />
+    <br>
+    <form method="post">
+        <label>Müşteri Adı Soyadı</label>
+        <input type="hidden" asp-for="CustomerId" />
+        <input type="text" class="form-control" asp-for="CustomerFullName" />
+        <br>
+        <label>Adres</label>
+        <input type="text" class="form-control" asp-for="CustomerAddress" />
+        <br>
+        <label>Telefon</label>
+        <input type="text" class="form-control" asp-for="CustomerPhone" />
+        <br>
+        <button class="btn btn-primary">Müşteri Bilgilerini Güncelle</button>
+    </form>
+</div>

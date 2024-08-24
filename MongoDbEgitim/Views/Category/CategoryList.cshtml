@@ -1,0 +1,33 @@
+﻿@model List<MongoDbEgitim.Dtos.CategoryDtos.ResultCategoryDto>
+@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+
+}
+
+
+
+<div class="container">
+    <br /><br />
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Kategori</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td>@item.CategoryName</td>
+                <td><a class="btn btn-danger" href="/Category/DeleteCategory/@item.CategoryId">Sil</a></td>
+                <td><a class="btn btn-info" href="/Category/UpdateCategory/@item.CategoryId">Güncele</a></td>
+            </tr>
+        }
+    </table>
+    <a class="btn btn-info" href="/Category/CreateCategory/">Ekle</a>
+
+</div>

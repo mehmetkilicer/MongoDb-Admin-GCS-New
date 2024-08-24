@@ -1,0 +1,144 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+﻿
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Admin Panel</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- site icon -->
+    <link rel="icon" href="~/Admin-Tema-06/images/fevicon.png" type="image/png" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="~/Admin-Tema-06/css/bootstrap.min.css" />
+    <!-- site css -->
+    <link rel="stylesheet" href="~/Admin-Tema-06/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="~/Admin-Tema-06/css/responsive.css" />
+    <!-- color css -->
+    <link rel="stylesheet" href="~/Admin-Tema-06/css/colors.css" />
+    <!-- select bootstrap -->
+    <link rel="stylesheet" href="~/Admin-Tema-06/css/bootstrap-select.css" />
+    <!-- scrollbar css -->
+    <link rel="stylesheet" href="~/Admin-Tema-06/css/perfect-scrollbar.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="~/Admin-Tema-06/css/custom.css" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="dashboard dashboard_1">
+    <div class="full_container">
+        <div class="inner_container">
+            <nav id="sidebar" style="background-color: rgb(75, 0, 130); margin-top: -22px;">
+                @*                 <div class="sidebar_blog_1" style="background-color: rgb(70, 130, 180);">
+                <div class="sidebar_user_info">
+                <div class="icon_setting"></div>
+                <div class="user_profle_side">
+                <div class="user_img"><img class="img-responsive" src="~/Admin-Tema-06/images/layout_img/user_img.jpg" alt="#" /></div>
+                <div class="user_info">
+                <h6>John David</h6>
+                <p><span class="online_animation"></span> Online</p>
+                </div>
+                </div>
+                </div>
+                </div> *@
+                <div class="sidebar_blog_2" style="background-color: rgb(75, 0, 130); margin-top: -3px;">
+                    <h4 style="background-color: rgb(75, 0, 130);">General</h4>
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="/Admin/Dashboard/Index" data-toggle="collapse" aria-expanded="false"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                        </li>
+                        <li><a href="/Product/ProductList"><i class="fa fa-th-list"></i> <span>Ürün Listesi</span></a></li>
+                        <li><a href="/Category/CategoryList"><i class="fa fa-th"></i> <span>Kategori Listesi</span></a></li>
+                        <li><a href="/Customer/CustomerList"><i class="fa fa-users"></i> <span>Müşteri Listesi</span></a></li>
+                        <li><a href="/Order/OrderList"><i class="fa fa-bar-chart"></i> <span>Sipariş Listesi</span></a></li>
+                        <li><a href="/Pdf/GetOrderWithCustomerAndProduct/"><i class="fa fa-file-pdf-o"></i> <span>PDF Liste</span></a></li>
+                        <li><a href="/Excel/ProductWithCategoryExcelList/"><i class="fa fa-file-excel-o"></i> <span>Excel Liste</span></a></li>
+                        <li><a href="/Admin/Login/LogOut"><i class="fa fa-sign-out"></i> <span>Çıkış Yap</span></a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div id="content">
+                ﻿<div class="topbar">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(75, 0, 130);">
+                        <div class="full">
+
+                            <div class="right_topbar">
+                                <div class="icon_info" style="background-color: rgb(75, 0, 130);">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge">2</span></a></li>
+
+                                        <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge">3</span></a></li>
+                                    </ul>
+                                    <ul class="user_profile_dd">
+                                        <li style="background-color: rgb(75, 0, 130);">
+                                            <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="~/Admin-Tema-06/images/layout_img/user_img.jpg" alt="#" /><span class="name_user">Mehmet Kılıc</span></a>
+                                            <div class="dropdown-menu">
+
+                                                <a class="dropdown-item" href="settings.html">Settings</a>
+
+                                                <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="midde_cont">
+                    <div class="container-fluid">
+
+                        @RenderBody()
+                    </div>
+                    <div class="container-fluid">
+                        <div class="footer">
+                            <p>
+                                Copyright © 2018 Designed by Mehmet Kılıcer. Tüm hakları saklıdır.<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    ﻿<!-- jQuery -->
+    <script src="~/Admin-Tema-06/js/jquery.min.js"></script>
+    <script src="~/Admin-Tema-06/js/popper.min.js"></script>
+    <script src="~/Admin-Tema-06/js/bootstrap.min.js"></script>
+    <!-- wow animation -->
+    <script src="~/Admin-Tema-06/js/animate.js"></script>
+    <!-- select country -->
+    <script src="~/Admin-Tema-06/js/bootstrap-select.js"></script>
+    <!-- owl carousel -->
+    <script src="~/Admin-Tema-06/js/owl.carousel.js"></script>
+    <!-- chart js -->
+    <script src="~/Admin-Tema-06/js/Chart.min.js"></script>
+    <script src="~/Admin-Tema-06/js/Chart.bundle.min.js"></script>
+    <script src="~/Admin-Tema-06/js/utils.js"></script>
+    <script src="~/Admin-Tema-06/js/analyser.js"></script>
+    <!-- nice scrollbar -->
+    <script src="~/Admin-Tema-06/js/perfect-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        var ps = new PerfectScrollbar('#sidebar');
+    </script>
+    <!-- custom js -->
+    <script src="~/Admin-Tema-06/custom.js"></script>
+    <script src="~/Admin-Tema-06/js/chart_custom_style1.js"></script>
+</body>
+</html>
+
+
+</html>

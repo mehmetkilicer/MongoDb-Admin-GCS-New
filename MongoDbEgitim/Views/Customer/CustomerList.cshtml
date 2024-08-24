@@ -1,0 +1,37 @@
+﻿
+@model List<MongoDbEgitim.Dtos.CustomerDtos.ResultCustomerDto>
+@{
+    ViewData["Title"] = "CustomerList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+
+}
+
+
+<div class="container">
+    <br /><br />
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Müşteri Adı/Soaydı</th>
+            <th>Adres</th>
+            <th>Telefon</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td>@item.CustomerFullName</td>
+                <td>@item.CustomerAddress</td>
+                <td>@item.CustomerPhone</td>
+                <td><a class="btn btn-danger" href="/Customer/RemoveCustomer/@item.CustomerId">Sil</a></td>
+                <td><a class="btn btn-info" href="/Customer/UpdateCustomer/@item.CustomerId">Güncele</a></td>
+            </tr>
+        }
+    </table>
+    <a class="btn btn-info" href="/Customer/CreateCustomer/">Ekle</a>
+
+</div>

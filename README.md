@@ -1,1 +1,0 @@
-# MongoDb-Admin-GCS-New
