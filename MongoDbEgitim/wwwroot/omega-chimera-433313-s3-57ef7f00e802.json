@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "omega-chimera-433313-s3",
+  "private_key_id": "57ef7f00e8020ddb6e3339127ac0960a86d5e31b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCTMtwMBbpToM5t\nSg6sUuCNYhjHFIYaZrw1JuhPjsQMhMsVP1pfAxhwb0Zb3DcSgnYtafiRdFVoJyLT\n/k2LcUiw1Tp14n0dkgIcycG83Zk/D5hXeyLaBzMTgaH2oH2OqmlaW6Ej2jAkvxuy\n5kYv9x668vZ+sx6lHKULgsqOZJvI4n/eRayg03bgvMnzV2xPaAhxSbOBFBB6lkg/\nC27WkQUbj7JXZJqRYxcb/uGDMDRrroPpmqTCpptKIumhIn10ksG5AbcYF5uyg6Wm\n9nwpkFNWS61TxjPdwo6RicXTO1mhAFQEAtC7IjVZMZyqA/IFlyTethMd8IlL9hUv\nR42iBu/dAgMBAAECggEAEtddvIQ3LLaBSxKW/OPBg8IHXeQjTi8m7r7DhFDH3g+u\nrFI8T7u7sxiV2Z2UcbVqnwwuGaAvFnJ7+MVXnlOqdEgMKu60s8ZD/Z9YQcPeS74Z\nR96marX6ibKmzUS5uDsuhQxZfJdUYOpoBzwxG7lL9lixyIHw7ZLUZWbLupzne+JL\nDomuy076R9n/VKFlcHo3cC0UepYHHnmLQGcu45FLbiGDP3CCKzCdlpaOBWt13sfd\n0tFbe+wUdwjMCiaFO3V/zOOre+Od2GhcNTVrW3GJGfcrJxtSWeO3LhNMyzCxvs8W\nfrUVpOSFHzRhLak/RAJ6ijicKgaaKl58BKGqbpCImQKBgQDHX1hRj1uiHADG9YVf\nj0Kcxk96yuVFzfnenGL171+s+nsNsFhB+jjP9y1NCM75hMOMAGug//fqZO+Iu0gx\nbaKbMdbMYlREm72wD2QFsXKRKQaMZCd8t2hFjyeUBdl/om4M1lb7qpdDnzgf4LMc\nLvaW9MUhjmwWoF8VVYSvM0kPUwKBgQC9AeKX471cuoNGO4uNdNHJBMjN2ZuvyIY5\nhXMrfPdkUCFGpnxq82fG9FpMrn+6ekOC6CFf19q51VqsJSYkLAuT4++ucQZS4Hdo\nweah+yFsnxI7dRalFlbVqPkwM0414x77/WfUMMOauD137Dby2kGg6jtK4C6Q9F01\nQz0mZ+WODwKBgBIok/GxveXQ6R015XTjpmyC/2AutJ0b+oMU+UpvB+bIVYbUpeU0\ndhIy8BRRFhDRz8GjlCnwxlK56LsqW5Ps6V97NZYd6pDpImizrid6lvWzp94HjTUl\nu0CCnlc0BTBDygQvTXLUgbxt9v2oSIfrmxf6qS26PAv/hUl7JX+TizbzAoGBAJzf\nwq3k5VfgqnKRm5uWGUUqRmysr86vtdBqVhQDTeahp2zXZC70xe7ZA1XgA73IGt69\nQm4lX7KcRfzZfJXLRPTD3DzCLMh+7D0zqvRI1w4r3VsiLOBq8Tm3XNRH0SNi1mW6\nhwIUU1XIk6REl7rrsksX/oyAE8ZWPEKoA0osM9i7AoGBAKBwzE5JR6vygTDgqdwK\n0roupSuaBcZkE2CpWWeCLW2qNmA3fhG7ymmC1PCLqHa2OJjy5y3jHU6EUnNFfSZ6\npbEfzX6CUt1aKZvZmHzSGmJCG9IOj2D1KPzSENdWNzTGeW2+rmMU5AKOe1JepARy\ngf5I4gS3qEucEShzG5NIqr4L\n-----END PRIVATE KEY-----\n",
+  "client_email": "mongoprojedenemeservis@omega-chimera-433313-s3.iam.gserviceaccount.com",
+  "client_id": "112917095884443175459",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mongoprojedenemeservis%40omega-chimera-433313-s3.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
